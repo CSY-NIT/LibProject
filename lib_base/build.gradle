@@ -1,5 +1,7 @@
-apply plugin: 'com.android.library'
-
+plugins{
+  id 'com.android.library'
+  id 'maven-publish'
+}
 android {
   compileSdkVersion 28
   buildToolsVersion "28.0.3"
