@@ -1,17 +1,13 @@
 package com.csy.libproject;
 
 import android.os.Bundle;
-import com.csy.lib_base.mvvm.BaseActivity;
-import com.csy.libproject.databinding.ActivityMainBinding;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends BaseActivity<ActivityMainBinding,LoginViewModel> {
+public class MainActivity extends AppCompatActivity {
 
-
-  @Override public int initContentView(Bundle savedInstanceState) {
-    return R.layout.activity_main;
-  }
-
-  @Override public int initVariableId() {
-    return BR.viewModel;
+  @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
   }
 }
