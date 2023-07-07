@@ -1,0 +1,3 @@
+rootProject.name='LibProject'
+include ':app'
+include ':lib_base'
